@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - MonEtab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-pencil-alt"></i>MonEtab</h1>
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt" ></i> Tableau de bord</a></li>
+                <li><a href="elevelist.html"><i class="fas fa-book-reader"></i> Elèves</a></li>
+                <li><a href="proflist.html"><i class="fas fa-chalkboard-teacher" ></i> Professeurs</a></li>
+                <li><a href="listutilisateur.html"><i class="fas fa-user" ></i> Utilisateurs</a></li>
+                <li><a href="rapport.html" class="active"><i class="fas fa-file-alt" ></i> Rapport</a></li>
+                <li><a href="index.html"><i class="fas fa-sign-out-alt" style="color: rgb(248, 59, 75);" ></i> Déconnexion</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="main">
+            <h2>Rapport </h2>
+
+            <div class="input-box-2">
+                <select name="sexe" required class="champ-input">
+                    <option value="">Choisir...</option>
+                    <option value="homme">Liste des élèves</option>
+                    <option value="femme">Liste des professeurs</option>
+                    <option value="femme">Liste des utilisateurs</option>
+                </select>
+            </div>
+
+            <div class="btn">
+                <button type="submit" name="inscrire" class="annuler">Générer format pdf</button>
+                <button type="submit" name="enregistrer" class="inscrire">Générer format excel</button>
+            </div>
+
+        </div>
+    </div>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mon propre CSS -->
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>MonEtab - Modifier Professeur</title>
+</head>
+<body>
+    <section class="inscription">
+        <h2 class="titre">Modifier professeur</h2>
+        <form action="" method="post" class="box-form" enctype="multipart/form-data">
+            <div class="box">
+                <div class="user-detail">
+                    <div class="input-box-2">
+                        <p>Nom</p>
+                        <input type="text" name="nom" placeholder="Votre nom" required class="champ-input">
+                    </div>
+
+                    <div class="input-box-2">
+                        <p>Prénom</p>
+                        <input type="text" name="prenom" placeholder="Votre prénom" required class="champ-input">
+                    </div>
+
+                    <div class="input-box-2">
+                        <p>Sexe</p>
+                        <select name="sexe" required class="champ-input">
+                            <option value="">Choisir...</option>
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                        </select>
+                    </div>
+
+
+                <div class="user-detail">
+
+                    <div class="input-box-2">
+                        <p>Date de naissance</p>
+                        <input type="date" name="piece_file"  class="champ-input">
+                    </div>
+                    
+                    <div class="input-box-2">
+                        <p>Matière</p>
+                        <select name="metier" required class="champ-input">
+                            <option value="">Choisir...</option>
+                            <option value="couture">Math</option>
+                            <option value="artisanat d’art et de décoration">Physique</option>
+                            <option value="mecanique ">EPS </option>
+                            <option value="agroalimentaire, alimentation, restauration ">Anglais </option>
+                            <option value="maçonnerie ">SVT </option>
+                            <option value="transport">Philosophie</option>
+                            <option value="menuiserie/charpenterie">Français</option>
+                            <!-- Ajouter d'autres options ici -->
+                        </select>
+                    </div>
+                    <div class="input-box-2">
+                        <p>Numéro de téléphone</p>
+                        <input type="tel" name="whatsapp" placeholder="Votre numéro de téléphone" required class="champ-input">
+                    </div>
+                    <div class="input-box-2">
+                        <p>Ville</p>
+                        <input type="text" name="prenom" placeholder="Votre ville" required class="champ-input">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Case à cocher pour les termes et conditions -->
+
+            <div class="btn">
+                <button type="submit" name="inscrire" class="annuler">Annuler</button>
+                <button type="submit" name="enregistrer" class="inscrire">Enregistrer</button>
+            </div>
+            
+        </form>
+    </section>
+</body>
+</html>
